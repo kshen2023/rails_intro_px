@@ -1,0 +1,14 @@
+<!-- app/views/sections/index.html.erb -->
+
+<h1 class="text-3xl font-bold mb-6">Sections</h1>
+
+<ul class="space-y-4">
+  <% @sections.each do |section| %>
+    <li class="bg-white shadow-md rounded-md p-4">
+      <%= link_to section.section_name, section_path(section), class: "text-blue-600 hover:underline" %>
+      <!-- Adjust the link_to as per your application's needs -->
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to 'New Section', new_section_path, class: "inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600" %>

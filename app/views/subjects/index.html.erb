@@ -1,0 +1,14 @@
+<!-- app/views/subjects/index.html.erb -->
+
+<h1 class="text-3xl font-bold mb-6">Subjects</h1>
+
+<ul class="space-y-4">
+  <% @subjects.each do |subject| %>
+    <li class="bg-white shadow-md rounded-md p-4">
+      <%= link_to subject.subject_name, subject_path(subject), class: "text-blue-600 hover:underline" %>
+      <!-- Adjust the link_to as per your application's needs -->
+    </li>
+  <% end %>
+</ul>
+
+<%= link_to 'New Subject', new_subject_path, class: "inline-block mt-4 px-4 py-2 bg-blue-500 text-white rounded-md hover:bg-blue-600" %>

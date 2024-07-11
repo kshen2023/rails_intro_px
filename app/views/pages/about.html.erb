@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>About Page</title>
+  <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet"> <!-- Include Tailwind CSS from CDN -->
+</head>
+<body class="bg-gray-100 text-gray-800 p-6">
+
+  <h1 class="text-3xl font-bold mb-4">About Our Application</h1>
+
+  <div class="mb-6">
+    <h2 class="text-xl font-semibold mb-2">Data Sources</h2>
+    <ul class="list-disc list-inside">
+      <li>Schools, Sections, Students: Imported from CSV files in <code>db/seeds</code>.</li>
+      <li>Teachers: Generated using Faker with specified validations.</li>
+      <li>Subjects: Generated using Faker with specified validations.</li>
+    </ul>
+  </div>
+
+  <h2 class="text-xl font-semibold mb-2">Entity-Relationship Diagram (ERD)</h2>
+  <div class="mb-6">
+    <img src="<%= asset_path('px.png') %>" alt="Entity-Relationship Diagram" class="max-w-full h-auto">
+  </div>
+
+  <footer class="text-sm text-gray-500 mt-8">
+    <!-- Add footer content if needed -->
+  </footer>
+
+</body>
+</html>
+

@@ -1,0 +1,15 @@
+<!-- app/views/students/show.html.erb -->
+
+<h1><%= @student.student_name %></h1>
+
+<p>Age: <%= @student.student_age %></p>
+<p>Grade: <%= @student.student_grade %></p>
+
+<h2>Sections</h2>
+<ul>
+  <% @student.sections.each do |section| %>
+    <li><%= link_to section.section_name, section_path(section) %></li>
+  <% end %>
+</ul>
+
+<%= link_to 'Back to Students', students_path %>

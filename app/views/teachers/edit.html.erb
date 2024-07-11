@@ -1,0 +1,8 @@
+<!-- app/views/teachers/edit.html.erb -->
+
+<h1>Edit Teacher</h1>
+
+<%= render 'form', teacher: @teacher %>
+
+<%= link_to 'Show', teacher_path(@teacher) %> |
+<%= link_to 'Back', teachers_path %>

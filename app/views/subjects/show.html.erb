@@ -1,0 +1,15 @@
+<!-- app/views/subjects/show.html.erb -->
+
+<h1><%= @subject.subject_name %></h1>
+
+<p>Description: <%= @subject.subject_description %></p>
+<p>Code: <%= @subject.subject_code %></p>
+
+<h2>Teachers</h2>
+<ul>
+  <% @subject.teachers.each do |teacher| %>
+    <li><%= link_to teacher.teacher_name, teacher_path(teacher) %></li>
+  <% end %>
+</ul>
+
+<%= link_to 'Back to Subjects', subjects_path %>

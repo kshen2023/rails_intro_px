@@ -1,6 +1,13 @@
 source "https://rubygems.org"
 
 ruby "3.3.0"
+gem 'kaminari'
+# gem 'bootstrap', '~> 5.0'
+# gem 'mini_racer'
+gem 'activeadmin'
+gem 'devise'
+gem 'sassc-rails'
+gem 'tailwindcss-rails'
 
 # Bundle edge Rails instead: gem "rails", github: "rails/rails", branch: "main"
 gem "rails", "~> 7.1.3", ">= 7.1.3.4"
@@ -65,3 +72,5 @@ group :test do
   gem "capybara"
   gem "selenium-webdriver"
 end
+
+gem "faker", "~> 3.4"

@@ -1,0 +1,8 @@
+<!-- app/views/subjects/edit.html.erb -->
+
+<h1>Edit Subject</h1>
+
+<%= render 'form', subject: @subject %>
+
+<%= link_to 'Show', subject_path(@subject) %> |
+<%= link_to 'Back', subjects_path %>

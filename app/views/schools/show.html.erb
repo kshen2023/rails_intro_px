@@ -1,0 +1,14 @@
+<!-- app/views/schools/show.html.erb -->
+
+<h1><%= @school.school_name %></h1>
+
+<p>Description: <%= @school.school_description %></p>
+
+<h2>Sections</h2>
+<ul>
+  <% @school.sections.each do |section| %>
+    <li><%= link_to section.section_name, section_path(section) %></li>
+  <% end %>
+</ul>
+
+<%= link_to 'Back to Schools', schools_path %>
